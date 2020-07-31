@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_select_01: if</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>js_select_01: if</h1>
+	選択・条件分岐
+
+	<hr>
+
+	<script>
+		<!-- 条件判定に使う変数を用意する -->
+		const x = 81;
+
+		document.write( "x: " + x + "<br><br>" );
+
+		// 条件によって実行する処理を使い分ける
+		// 　条件によって；　大きい　小さい　等しい　～でない　
+		if ( x > 70 ) {
+			document.write( "70より大きい<br>" );
+		}
+
+		if ( x < 80 ) {
+			document.write( "80より小さい<br>" );
+		}
+
+		if ( x >= 70 ) {
+			document.write( "70以上<br>" );
+		}
+
+		if ( x <= 80 ) {
+			document.write( "80以下<br>" );
+		}
+
+		if ( x == 80 ) {
+			document.write( "80と等しい<br>" );
+		}
+
+		if ( x != 80 ) {
+			document.write( "80ではない<br>" );
+		}
+
+	</script>
+
+</body>
+</html>

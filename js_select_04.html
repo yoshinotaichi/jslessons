@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_select_04: equal</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>js_select_04: equal</h1>
+	等しい場合の処理を書く
+
+	<hr>
+
+	<input type="number" id="year">
+	<button id="yearBtn">年号判定</button>
+
+
+	<script>
+		document.getElementById( 'yearBtn' ).onclick = function() {
+			const year = parseInt( document.getElementById( 'year' ).value );
+
+			if ( year !== 1992 ) {
+				document.write( "はい、バルセロナ五輪の年ではありません" );
+			} else {
+				document.write( "それは、バルセロナオリンピックの年！" );
+			}
+		}
+	</script>
+
+</body>
+</html>

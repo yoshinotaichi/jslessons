@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_select_02: if</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>js_select_03: else</h1>
+	条件に当てはまらない場合の処理を書く
+
+	<hr>
+
+	<input type="number" id="score">
+	<button id="scoreBtn">成績判定！</button>
+
+	<script>
+		document.getElementById( 'scoreBtn' ).onclick = function(){
+			const score = document.getElementById( 'score' ).value;
+
+			if ( score > 80 ) {
+				document.write( "成績: A" );
+			} else {
+				document.write( "Aではなかった..." );
+			}
+		}
+	</script>
+
+</body>
+</html>

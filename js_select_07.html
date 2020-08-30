@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_select_07: while & if</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>js_select_07: while & if</h1>
+	loopと組み合わせる
+	<hr>
+
+	loop: <input type="number" id="loopNum"><br>
+	msg1（通常）: <input type="text" id="msg1"><br>
+	msg2（条件）: <input type="text" id="msg2"><br>
+	<button id="goBtn">GO!</button>
+
+
+	<script>
+		document.getElementById( 'goBtn' ).onclick = function () {
+			const loopNum = parseInt( document.getElementById( 'loopNum' ).value );
+			const msg1 = document.getElementById( 'msg1' ).value;
+			const msg2 = document.getElementById( 'msg2' ).value;
+
+			let i = 0;
+			while ( i < loopNum ) {
+				if ( i%2 === 0 ) {
+					document.write( i + ': ' + msg2 + '<br>' );
+				} else {
+					document.write( i + ': ' + msg1 + '<br>' );
+				}
+				i++;
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_select_08: break</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>js_select_08: break</h1>
+	繰り返し処理を中断する( break )
+
+	<hr>
+
+	target: <input type="number" id="target"><br>
+	<button id="goBtn">GO!</button>
+
+	<script>
+		document.getElementById( 'goBtn' ).onclick = function() {
+			<!-- ターゲットの数値を設定する -->
+			let target = parseInt( document.getElementById( 'target' ).value );
+
+			// もし target が１００以上のとき、１００で割ったあまりを求める
+			if ( target >= 100 ) {
+				target %= 100;
+			}
+
+			let i = 0;
+			while ( i < 100 ) {
+				if ( i === target ) {
+					document.write( i + ': みつけた！<br>' );
+
+					break;
+				} else {
+					document.write( i + 'ちがう<br>' );
+				}
+				i++;
+			}
+		}
+	</script>
+
+</body>
+</html>

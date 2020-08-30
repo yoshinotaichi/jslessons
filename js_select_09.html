@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_select_09: continue</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>js_select_09: continue</h1>
+	処理を途中まで実行して次にいく( continue )
+
+	<hr>
+
+
+	<script>
+		let i = 0;
+		while ( i < 10 ) {
+			i++;
+			document.write( i + '<br>' );
+
+			if ( i >= 5 ) {
+				continue;
+			}
+
+			document.write( 'hello<br>' );
+		}
+	</script>
+
+</body>
+</html>
